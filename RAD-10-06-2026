@@ -25,19 +25,23 @@ class Main {
 
         System.out.println("\nI am " + name + ", I'm " + age + " years old. I live in " + address + ". My height is " + height + " cm, and my weight is " + weight + "kg.");
 
-// A#2 Diagnostic activity (Swithch case, and loops)
-        
-        System.out.print("Enter the value of x: ");
+// A#2 Diagnostic activity (Swithch case, and loops)  
+        System.out.print("\nEnter the value of x: ");
         int x = scanner.nextInt();
 
         System.out.print("Enter the value of y: ");
         int y = scanner.nextInt();
 
-        System.out.println("Choose arithmetic operators: ");
+        System.out.println("\n-----ARITHMETIC OPERATORS-----");
         System.out.println("+ - Addition");
         System.out.println("- - Subtraction");
         System.out.println("* - Multiplication");              
-        System.out.println("/ - Division");         
+        System.out.println("/ - Division");   
+
+        scanner.nextLine();
+
+        System.out.print("\nChoose arithmetic operators: ");
+        String arithmeticOp = scanner.nextLine();
 
         scanner.close();
     }
