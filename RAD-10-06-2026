@@ -26,6 +26,9 @@ class Main {
         System.out.println("\nI am " + name + ", I'm " + age + " years old. I live in " + address + ". My height is " + height + " cm, and my weight is " + weight + "kg.");
 
 // A#2 Diagnostic activity (Swithch case, and loops)  
+boolean calcu = true;
+
+while (calcu) {
         System.out.print("\nEnter the value of x: ");
         int x = scanner.nextInt();
 
@@ -43,6 +46,29 @@ class Main {
         System.out.print("\nChoose arithmetic operators: ");
         String arithmeticOp = scanner.nextLine();
 
+        switch (arithmeticOp) {
+                case "+": 
+                    System.out.print("Result: " + x + " + " + y + " = " + (x + y));
+                    break;
+                case "-": 
+                    System.out.print("Result: " + x + " - " + y + " = " + (x - y));
+                    break;
+                case "*": 
+                    System.out.print("Result: " + x + " * " + y + " = " + (x * y));
+                    break;
+                case "/": 
+                    if (y == 0){
+                    System.out.print("Error: Division by zero is not allowed.");
+                    } else {
+                        System.out.print("Result: " + x + " / " + y + " = " + (x / y));
+                    }
+                    break;
+                default:
+                    System.out.println("Invalid operator selected.");
+                    break;
+        }
+        
         scanner.close();
-    }
+        }
+    }     
 }
